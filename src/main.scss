@@ -101,4 +101,13 @@
     text-transform: capitalize;
     padding: 0.1rem 0.5rem;
   }
+
+  .alert-msg {
+    display: none;
+    color: #bde052;
+  }
+
+  .alert-msg.active {
+    display: inline-block;
+  }
 }

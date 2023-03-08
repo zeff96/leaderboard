@@ -1,26 +1,26 @@
 import './main.scss';
-import Scores from './modules/scores';
+import setData from './modules/set';
+import getData from './modules/get';
+import render from './modules/render';
+import { alertMsg, removeMsg } from './modules/alert';
 
-const list = document.querySelector('.scores-container');
-const submit = document.querySelector('.button');
-const addScore = document.querySelector('#add-score');
-const addName = document.querySelector('#add-name');
+const formEl = document.querySelector('.form');
+const btnEl = document.querySelector('#button');
 
-const scoreList = new Scores();
-
-submit.addEventListener('click', (e) => {
+formEl.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  if (addName.value.trim() && addScore.value.trim()) {
-    scoreList.add(addName.value, addScore.value);
-    scoreList.set();
-    scoreList.render(list);
-    addName.value = '';
-    addScore.value = '';
-  }
+  setData();
+  alertMsg();
+  setTimeout(removeMsg, 2000);
+
+  document.querySelector('#add-name').value = '';
+  document.querySelector('#add-score').value = '';
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  scoreList.get();
-  scoreList.render(list);
+btnEl.addEventListener('click', () => {
+  getData();
+  render();
 });
+
+window.onload = render();
