@@ -29,7 +29,7 @@ Basic website that allows users to add/remove chores and actvities from a list.
 - CSS(Flexbox - grid).
 - javaScript (Vanilla JS).
 - Github.
-- Local Storage.
+- Leaderboard API to fetch and store data [link](https://microverse.notion.site/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
 - Linters.
 
 ## Key Features:
@@ -43,10 +43,6 @@ Basic website that allows users to add/remove chores and actvities from a list.
 - Update README file.
 - Add Mark up to the .html file.
 - Add style to the web site.
-
-## Live Demo:
-
-[Live Demo Link]()
 
 
 ## Getting Started
@@ -78,12 +74,6 @@ Basic website that allows users to add/remove chores and actvities from a list.
 ### Run tests
 
 We use Linters for HTML/CSS to cheack this project.
-
-## Deployment 
-
-  ```sh
-    - github pages
-  ```
 
 ## Authors
 
