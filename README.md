@@ -20,8 +20,8 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# Todo-List
-Basic website that allows users to add/remove chores and actvities from a list. 
+# LEADERBOARD-API
+Basic website that allows users to record the scores of their games, post that data into an API and fetch the data and render it to the UI. 
 
  ## Built With
 
